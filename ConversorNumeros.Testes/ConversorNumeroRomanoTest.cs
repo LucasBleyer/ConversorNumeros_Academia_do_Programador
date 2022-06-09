@@ -303,6 +303,7 @@ namespace ConversorNumeros.Testes
         [DataRow("MVIII", 1008)]
         [DataRow("MIX", 1009)]
         [DataRow("MX", 1010)]
+
         public void Deve_converter_numeros_romanos_do_1001_ao_1010(string numero, int resultadoEsperado)
         {
             string numeroRomano = numero;
@@ -313,7 +314,6 @@ namespace ConversorNumeros.Testes
             //verificação - assert
             Assert.AreEqual(resultadoEsperado, resultado);
         }
-
         #endregion
     }
 }
